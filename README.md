@@ -21,8 +21,9 @@ Définitions:
 			- PartialLinkText
 			
 	### 2- Initialisation des éléments à l’aide de initElements():
-	Il s’agit d’une méthode statique utilisée pour initialiser les éléments Web que nous localisons à l’aide du @FindBy ou d’autres annotations, instanciant ainsi la classe de page.
-	        - PageFactory.initElements(WebDriver driver, java.lang.Class.pageObjectClass);
+	- Il s’agit d’une méthode statique utilisée pour initialiser les éléments Web que nous localisons à l’aide du @FindBy ou d’autres annotations, instanciant ainsi la classe de page.
+	        syntaxe: 
+		``` PageFactory.initElements(WebDriver driver, java.lang.Class.pageObjectClass);  ```
 
 - Un autre concept intéressant proposé par Page Factory est le concept de chargement paresseux utilisant AjaxElementLocatorFactory. Il peut être utilisé lorsque votre application utilise des éléments Ajax.
 - il s’agit d’une variante de Attente implicite à l’aide de la classe AjaxElementLocatorFactory. Par la suite, la syntaxe est la suivante:
