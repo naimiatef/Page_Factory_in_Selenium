@@ -2,14 +2,16 @@
 Définitions:
 - Page Factory est une classe fournie par Selenium WebDriver pour prendre en charge les modèles de conception d’objets de page.
 - il y a deux étapes simples à travers lesquelles nous devons définir et utiliser Page Factory dans les projets Selenium:
-	1- Utilisation de l’annotation @FindBy:
+	### 1- Utilisation de l’annotation @FindBy:
+		
 		- @FindBy : annotation utilisée dans Page Factory pour localiser et déclarer des éléments Web à l’aide de différents localisateurs. 
 		- Vous trouverez ci-dessous un exemple de déclaration d’un élément à l’aide de @FindBy:
+					
 					-  @FindBy(id="userName") 
 					-  WebElement userName;
+					
 	    - De même, on peut utiliser @FindBy avec différentes stratégies de localisation pour trouver des éléments Web et effectuer des actions sur eux.
 	    - Vous trouverez ci-dessous des localisateurs qui peuvent être utilisés :
-			```
 			- Nom de la classe
 			- .CSS
 			- Nom
@@ -18,8 +20,8 @@ Définitions:
 			- Texte de lien
 			- PartialLinkText
 			
-			```
-	2- Initialisation des éléments à l’aide de initElements()- Il s’agit d’une méthode statique utilisée pour initialiser les éléments Web que nous localisons à l’aide du @FindBy ou d’autres annotations, instanciant ainsi la classe de page.
+	### 2- Initialisation des éléments à l’aide de initElements():
+	Il s’agit d’une méthode statique utilisée pour initialiser les éléments Web que nous localisons à l’aide du @FindBy ou d’autres annotations, instanciant ainsi la classe de page.
 	        - PageFactory.initElements(WebDriver driver, java.lang.Class.pageObjectClass);
 
 - Un autre concept intéressant proposé par Page Factory est le concept de chargement paresseux utilisant AjaxElementLocatorFactory. Il peut être utilisé lorsque votre application utilise des éléments Ajax.
@@ -62,5 +64,5 @@ Définitions:
 		-   Cliquez sur le bouton Connexion.
 		-   Vérifiez le nom d’utilisateur connecté.
 		-   Cliquez sur le bouton Déconnexion.
-	 Pour automatiser le scénario ci-dessus en utilisant Page Factory dans Selenium
+	- Pour automatiser le scénario ci-dessus en utilisant Page Factory dans Selenium
 	
